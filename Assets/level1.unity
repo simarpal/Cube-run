@@ -203,7 +203,7 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 531713269}
-  m_Material: {fileID: 13400000, guid: d818d926946a964449693a70958f9364, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 1994390604}
   - component: {fileID: 1994390606}
   - component: {fileID: 1994390605}
-  - component: {fileID: 1994390607}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -468,18 +467,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1994390604}
-  forwardForce: 300
-  sideForce: 500
---- !u!114 &1994390607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1994390599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c2ffc4290e3794abb263bec559051d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1994390603}
-  offset: {x: 0, y: 0, z: 0}
+  forwardForce: 3000
