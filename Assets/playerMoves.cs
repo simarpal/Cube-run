@@ -23,6 +23,10 @@ public class playerMoves : MonoBehaviour {
 		if(Input.GetKey("a")){
 			rb.AddForce(-sideForce*Time.deltaTime, 0, 0, ForceMode.VelocityChange);			
 		}
+
+		if(rb.position.y < -1f){
+			FindObjectOfType<GameManager>().EndGame("falling");
+		}
 	}
 
 	// Update is called once per frame
