@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
 	bool gameEnded = false;
+	public GameObject completeLevelUI;
 
 	public void CompleteLevel(){
-
+		completeLevelUI.SetActive(true);
 	}
 
 	public void EndGame(string reason){
