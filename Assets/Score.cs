@@ -2,19 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour {
 
 	public Transform player;
 	public Text score;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
-		score.text = player.position.z.ToString("0");
+		var buildIndex = SceneManager.GetActiveScene().buildIndex;
+		score.text = (buildIndex*565 + player.position.z).ToString("0");
 	}
 }

@@ -8,11 +8,6 @@ public class playerMoves : MonoBehaviour {
 	public float forwardForce;
 	public float sideForce;
 
-	// Use this for initialization
-	void Start () {
-		
-	}	
-
 	// Update is called once per frame
 	void FixedUpdate () {
 		rb.AddForce(0, 0, forwardForce*Time.deltaTime);
@@ -27,10 +22,5 @@ public class playerMoves : MonoBehaviour {
 		if(rb.position.y < -1f){
 			FindObjectOfType<GameManager>().EndGame("falling");
 		}
-	}
-
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
